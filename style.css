@@ -1,8 +1,18 @@
+:root{
+    --commoncolor: #a8a8a8;
+    --uncommoncolor: #15ff00;
+    --rarecolor: #0051ff;
+    --epiccolor: #cc00ff;
+    --legendarycolor: #ffc800;
+    --bordercolor: #3a3a40;
+}
+
 @font-face {
     font-family: robo;
     src: url(roboto.ttf);
 }
 html, body{
+    background-color: #1e1e22;
     padding: 0;
     height: 100%;
     margin: 0;
@@ -17,25 +27,33 @@ div{
     padding: 0;
     border: 0;
 }
+.div1,.div2,.div3{
+    border-radius: 3vh;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: var(--bordercolor);
+    border-width: 0.1vh;
+}
 .div1{
     overflow: scroll;
     scrollbar-width: none;
     margin: 0;
-    width: 7.29166666667%;
+    width: 7.29%;
     height: 100%;
     float: left;
-    background-color: #1e1e22;
+    background-color: #1f1f23;
 }
 .div2{
+    scroll-behavior: smooth;
     overflow-y: auto;
     overscroll-behavior-y: auto;
     height: 100vhs;
     scrollbar-width: none;
     margin: 0;
-    width: 17.7083333333%;
+    width: 17.71%;
     height: 100%;
     float: left;
-    background-color: #29292e;
+    background-color: #252529;
 }
 .div3{
     cursor: default;
@@ -43,7 +61,7 @@ div{
     width: 75%;
     height: 100%;
     float: left;
-    background-color: #393941;
+    background-color: #2f2f35;
     color: #e2e6ea;
     text-align: center;
     padding: 0;
@@ -62,7 +80,7 @@ h1{
     text-decoration: underline;
 }
 
-.mh,.m1,.m2,.m5{
+.mh,.m1,.m2c,.m2u,.m5{
     display: inline-block;
     transition: 0.1s;
     cursor: pointer;
@@ -91,7 +109,7 @@ h1{
     background-color: #35353b;
     align-content: center;
     text-align: center;
-    color: #b0b7c3;
+    color: #e2e6ea;
 }
 
 .mh p{
@@ -103,7 +121,7 @@ h1{
     cursor: pointer;
 }
 
-.m2{
+.m2c{
     display: inline-flex;
     background-color: #35353b;
     border-radius: 2.1vw;
@@ -113,12 +131,33 @@ h1{
     width: 16.16vw;
     font-size: 1.5vw;
     align-items: center;
-    color: #b0b7c3;
+    color: var(--commoncolor);
     overflow: hidden;
 }
 
-.m2 img{
+.m2u{
+    display: inline-flex;
+    background-color: #35353b;
+    border-radius: 2.1vw;
+    margin-left: 4.41176471%;
+    margin-top: 1.85vh;
+    height: 9.26vh;
+    width: 16.16vw;
+    font-size: 1.5vw;
+    align-items: center;
+    color: var(--uncommoncolor);
+    overflow: hidden;
+}
+
+.m2c img, .m2u img{
     float: left;
+}
+
+.m1,.m2c,.m2u,.m3,.m4,.m5,.md1,.mh{
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: var(--bordercolor);
+    border-width: 0.3vh;
 }
 
 .m3{
@@ -153,13 +192,13 @@ h1{
 
 .m4{
     display: flex;
-    margin-top: 14vh;
+    margin-top: 10.5vh;
     border-radius: 1.5vh;
     margin-right: 0.78125vw;
     margin-left: 0.78125vw;
     background-color: #29292e;
     width: 70vw;
-    height: 70vh;
+    height: 75vh;
     display: inline-block;
     text-align: center;
     align-content: center;
@@ -223,7 +262,7 @@ h1{
   z-index: 100;
   border-radius: 30px;
   margin-left: 27.5vw;
-  margin-top: 15vh;
+  margin-top: 12.5vh;
   display: none;
   overflow: wrap;
   position: absolute;
@@ -241,26 +280,28 @@ h1{
 
 
 .common{
-    color: #a8a8a8;
+    color: var(--commoncolor);
 }
 .uncommon{
-    color: #15ff00;
+    color: var(--uncommoncolor);
 }
 .rare{
-    color: #0051ff;
+    color: var(--rarecolor);
 }
 .epic{
-    color: #cc00ff;
+    color: var(--epiccolor);
 }
 .legendary{
-    color: #ffc800;
+    color: var(--legendarycolor);
 }
 
 .m1:hover .md {display: block;}
 
 .m1:hover {border-radius: 30%;}
 
-.m2:hover {border-radius: 1.3vw;}
+.m2c:hover {border-radius: 1.3vw;}
+
+.m2u:hover {border-radius: 1.3vw;}
 
 .mh:hover {border-radius: 1.3vw;}
 
