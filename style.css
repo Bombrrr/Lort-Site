@@ -1,9 +1,9 @@
 :root{
     --commoncolor: #a8a8a8;
-    --uncommoncolor: #15ff00;
-    --rarecolor: #0051ff;
-    --epiccolor: #cc00ff;
-    --legendarycolor: #ffc800;
+    --uncommoncolor: #4ca744;
+    --rarecolor: #2d56af;
+    --epiccolor: #a732c5;
+    --legendarycolor: #c8a421;
     --bordercolor: #3a3a40;
 }
 
@@ -121,21 +121,28 @@ h1{
     cursor: pointer;
 }
 
-.m2c{
-    display: inline-flex;
-    background-color: #35353b;
-    border-radius: 2.1vw;
-    margin-left: 4.41176471%;
-    margin-top: 1.85vh;
-    height: 9.26vh;
-    width: 16.16vw;
-    font-size: 1.5vw;
-    align-items: center;
+.m2c, .common{
     color: var(--commoncolor);
-    overflow: hidden;
 }
 
-.m2u{
+.m2u, .uncommon{
+    color: var(--uncommoncolor);
+}
+
+.m2r, .rare{
+    color: var(--rarecolor);
+}
+
+.m2e, .epic{
+    color: var(--epiccolor);
+}
+
+.m2l, .legendary{
+    color: var(--legendarycolor);
+}
+
+.m2c, .m2u, .m2r, .m2e, .m2l{
+    cursor: pointer;
     display: inline-flex;
     background-color: #35353b;
     border-radius: 2.1vw;
@@ -145,11 +152,11 @@ h1{
     width: 16.16vw;
     font-size: 1.5vw;
     align-items: center;
-    color: var(--uncommoncolor);
     overflow: hidden;
 }
 
-.m2c img, .m2u img{
+
+.m2c img, .m2u img, .m2r img, .m2e img, .m2l img{
     float: left;
 }
 
@@ -210,6 +217,8 @@ h1{
 }
 
 .m5{
+    margin-top: 2.67vh;
+    cursor: default;
     align-items: center;
     margin-left: 0.75vw;
     margin-right: 0.75vw;
@@ -222,6 +231,7 @@ h1{
     height: 11.56vh;
     width: 6.5vw;
 }
+
 .m1i{
     margin-right: 0.3vh;
     border-radius: 100000px;
@@ -279,32 +289,9 @@ h1{
 }
 
 
-.common{
-    color: var(--commoncolor);
-}
-.uncommon{
-    color: var(--uncommoncolor);
-}
-.rare{
-    color: var(--rarecolor);
-}
-.epic{
-    color: var(--epiccolor);
-}
-.legendary{
-    color: var(--legendarycolor);
-}
 
-.m1:hover .md {display: block;}
+.m1:hover .md, .m5:hover .md1 {display: block;}
 
 .m1:hover {border-radius: 30%;}
 
-.m2c:hover {border-radius: 1.3vw;}
-
-.m2u:hover {border-radius: 1.3vw;}
-
-.mh:hover {border-radius: 1.3vw;}
-
-.m5:hover .md1 {display: block;}
-
-.m5:hover {border-radius: 1.3vw;}
+.m2c:hover, .m2u:hover, .m2r:hover, .m2e:hover, .m2l:hover, .mh:hover, .m5:hover {border-radius: 1.3vw;}
