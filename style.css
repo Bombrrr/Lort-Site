@@ -17,9 +17,11 @@ html, body{
     height: 100%;
     margin: 0;
 }
+
 *{
     font-family: robo;
 }
+
 section{
     margin: 0;
     padding: 0;
@@ -219,6 +221,7 @@ h1{
     scrollbar-width: none;
     text-overflow: wrap;
     padding: 0;
+    padding-bottom: 2.67vh;
 }
 
 .m5{
@@ -300,8 +303,6 @@ section{
 .common, .uncommon, .rare, .epic, .legendary{
     font-size: 3vh;
 }
-
-
 
 .m1:hover .md, .m5:hover .md1 {display: block;}
 
