@@ -37,6 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     // --- Initial Run ---
     // This sets the default view when the page first loads
-    showSpecific('item', 'item2');
-    showSpecific2('itm', 'itm2');
+    showSpecific('lort', 'lort2');
+    showSpecific2('lortb', 'lortb2');
 });

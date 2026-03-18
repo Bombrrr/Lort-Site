@@ -6,22 +6,33 @@
 <script src="script.js"></script>
 </head>
 <body>
+
 <!--Section Buttons-->
 <div class="div1">
-    <a onclick="showSpecific('why', 'why2')">
-    <div class="m1" style="background-image: url('cliff.png'); background-size: 150%;"><div class="md">About Lort</div></div><div class="m1i" id="why2"></div>
+    <a onclick="showSpecific('lort', 'lort2')">
+    <div class="m1" style="background-image: url('cliff.png'); background-size: 150%;"><div class="md">About Lort</div></div><div class="m1i" id="lort2"></div>
     </a>
     <a onclick="showSpecific('item', 'item2')">
-    <div class="m1" style="background-image: url('images/common/Baba\'s_Bumper.webp'); background-size: 100%;"><div class="md">About Lort</div></div><div class="m1i" id="item2"></div>
+    <div class="m1" style="background-image: url('images/common/Baba\'s_Bumper.webp'); background-size: 100%;"><div class="md">Items</div></div><div class="m1i" id="item2"></div>
     </a>
     <a onclick="showSpecific('atri', 'atri2')">
-    <div class="m1" style="background-image: url('attributes.png'); background-size: 120%;"><div class="md">Items</div></div><div class="m1i" id="atri2"></div>
+    <div class="m1" style="background-image: url('Attributes2.png'); background-size: 105%;"><div class="md">Attributes</div></div><div class="m1i" id="atri2"></div>
+    </a>
+    <a onclick="showSpecific('enem', 'enem2')">
+    <div class="m1" style="background-image: url('images/placeholder.webp'); background-size: 105%;"><div class="md">Enemies</div></div><div class="m1i" id="enem2"></div>
     </a>
 </div>
 
-<!--Why Lort Buttons-->
-<div class="div2" id="why">
+<!--Lort Buttons-->
+<div class="div2" id="lort">
+    <a onclick="showSpecific2('lortb', 'lortb2')">
+    <div class="mh" style="background-image: url('cliff\ face.jpg'); background-size: 50%;"><p>About LORT</p></div><div class="m2i" id="lortb2" style="margin-top: 4.87vh;"></div>
+    </a>
+    <a onclick="showSpecific2('upleak', 'upleak2')">
+    <div class="m2"><img src="stewart2.png" class="m2mage"><p>Updates and Leaks</p></div><div class="m2i" id="upleak2"></div>
+    </a>
 </div>
+
 <!--Item Buttons-->
 <div class="div2" id="item">
     <a onclick="showSpecific2('itm', 'itm2')">
@@ -279,7 +290,7 @@
     </a>
     <!--Legendary-->
     <a onclick="showSpecific2('clever', 'clever2')">
-    <div class="m2l"><img src="images/legendary/Astonishingly_Clever_Optical_Gadget.webp" style="width: 5vw;"><p>Astonishingly Clever Optical Gadget</p></div><div class="m2i" id="clever2"></div>
+    <div class="m2l"><img src="images/legendary/Astonishingly_Clever_Optical_Gadget.webp" style="width: 5vw;"><p style="font-size: 1.3vw;">Astonishingly Clever Optical Gadget</p></div><div class="m2i" id="clever2"></div>
     </a>
     <a onclick="showSpecific2('boom', 'boom2')">
     <div class="m2l"><img src="images/legendary/Boomer's_Blessing.webp" style="width: 5vw;"><p>Boomer's Blessing</p></div><div class="m2i" id="boom2"></div>
@@ -297,12 +308,52 @@
     <div class="m2l"><img src="images/legendary/Shroom_of_Second_Chance.webp" style="width: 5vw;"><p>Shroom of Second Chance</p></div><div class="m2i" id="shroom2"></div>
     </a>
 </div>
+
 <!--Attribute Buttons-->
 <div class="div2" id="atri">
 </div>
 
 <!--Pages-->
 <section>
+
+<!--Lort Pages-->
+<div class="div3" id="lortb">
+    <h1>About Lort</h1>
+    <div class="m4">
+        <p>Lort is a Rogue-like game with a silly/funny style with up to 8 player multiplayer, In Lort there are different characters and ways to play, for example you can play as a Wizard with great Area of Effect abilities, another example is an assin with good mobility, there are also many types of weapons that you can find and they are all compatible with every character. The game gets harder as you move from world to world, but if you play correctly you can scale yourself really quickly, you can collect </p>
+        <a onclick="showSpecific('atri', 'atri2')"><p style="color: blue; text-decoration: underline; cursor: pointer;">attributes</p></a>
+        <p> that give buffs toward thier type (intelligence, strength, agility) along with </p>
+        <a onclick="showSpecific('item', 'item2')"><p style="color: blue; text-decoration: underline; cursor: pointer;">items</p></a>
+        <p> that give you different buffs per item, there are also permanant upgrades that stay effect every run that give simple upgrades like health and starting gold. This combination of characters, item upgrades, weapon types, attributes, has 8 player multiplayer, and silly style, keeps runs fresh and fun, Lort also goes on sale often with most events</p>
+        <br><br>
+        <p>This is why lort is a really good choice if you are planning on buying a roguelike, its refreshing, goes on sale often, and is really fun</p>
+        <br><br><br><br>
+        <p>Lort Was Designed and developed by Distract-A-Shark and has an official </p>
+        <a href="https://discord.gg/3VhnWFbA"><p style="color: blue; text-decoration: underline; cursor: pointer;">Discord</p></a>
+    </div>
+</div>
+<div class="div3" id="upleak">
+    <h1>Updates and Leaks</h1>
+    <h2>Update v0.7.1</h2>
+    <div class="update">
+        <img src="/images/updates/0.7.1/full.png">
+    </div>
+    <h2>Update v0.7</h2>
+    <div class="update">
+        <img src="/images/updates/0.7/diff.png">
+        <img src="/images/updates/0.7/magma.png">
+        <img src="/images/updates/0.7/chappel.png">
+        <img src="/images/updates/0.7/highlights.png">
+        <img src="/images/updates/0.7/powerups.png">>
+        <img src="/images/updates/0.7/enemies.png">
+        <img src="/images/updates/0.7/maps.png">
+        <img src="/images/updates/0.7/audio.png">
+        <img src="/images/updates/0.7/quality.png">
+        <img src="/images/updates/0.7/fix.png">
+    </div>
+</div>
+
+<!--items-->
 <div class="div3" id="itm">
     <h1>All Items</h1>
     <div class="m4">
@@ -337,50 +388,50 @@
         <div class="m5" style="background-image: url('images/common/Thicc_Skin.webp');"><div class="md1">+70 armor (+70 max)</div></div>
         <div class="m5" style="background-image: url('images/common/Thorny_Vines.webp');"><div class="md1">100% attack power as physical damage to enemies that hit you (+50% stack)</div></div>
         <!--Uncommon-->
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/uncommon/placeholder.webp');"><div class="md1">placholder</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Big_big_Boom_Bongo\'s.webp');"><div class="md1">50% chance on kill to deal 75% attack power as magic damage to enemies near to kill (+75% stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Bossbane_Crown.webp');"><div class="md1">+50% damage to bosses (+50% stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Chain_Of_Lightning.webp');"><div class="md1">10% chance on primary attack to hit 3 enemies with chain lightning for 50% attack power as magic damage (+5% chance, +2 enemies stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Chronometer.webp');"><div class="md1">+20% status effect duration (+20% stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Cool_Comfy_Shorts.webp');"><div class="md1">+50 cooldown reduction (+50 stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Cursed_Void_Goggles.webp');"><div class="md1">+40% crit damage, -100 armor (+40%, -100 stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Dat_Bad_Meat.webp');"><div class="md1">+200 health but stops all auto regen (+200 stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Fencer\'s_Mask.webp');"><div class="md1">abilities give +35 parry chance for 7 sec 10 buffs max (+35 stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Fiend\'s_Mask.webp');"><div class="md1">10% chance on primary attack to get 10% atttack speed buff for 5 seconds max 5 buff (+5% stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Fist_of_First_Impressions.webp');"><div class="md1">+50% damage to enemies with over 95% health (+50% stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Foe_Flipper.webp');"><div class="md1">1% chance to stun on attack or ability +100% damage to stunned enemies (+100% stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Golden_Glasses.webp');"><div class="md1">+10% crit chance +10% crit damage (+10%, +10% stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Keen_Eye.webp');"><div class="md1">+5% crit chance +25% crit damage (+25% stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Kingpin\'s_Kimchi.webp');"><div class="md1">+50 max health (+50 stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Leeching_Touch.webp');"><div class="md1">primary attacks give +1 health (+1 stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Mantle_of_the_Stalwart.webp');"><div class="md1">+50 armor to you and nearby enemies (+50 stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Onga_Ouncer.webp');"><div class="md1">+1 healing charge (+1 stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Pogo\'s_Rodspring.webp');"><div class="md1">+1 jump (+1 stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Pure_Creatine_Magicalhydrate.webp');"><div class="md1">+20% physical damage +5% magic damage (+20%, +5% stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Reaper\'s_Scythe.webp');"><div class="md1">kills give +3 health (+3 stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Ring_of_the_Lords.webp');"><div class="md1">6% chance on primary attack to spawn orb that gives nearby players +10% crit chance for 2 seconds (+6% chance, +2 sec stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Scorched_Triangle_of_Hell.webp');"><div class="md1">20% chance on kill to burn nearby enemies dealing 15% attack power as magic damage every 0.5 seconds for 6 seconds (+10% chance, +1 sec stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Sprinter\'s_Mask.webp');"><div class="md1">10% chance for +10% movement speed on primary attack 5 buffs max (+5% chance stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Stunna_Slappa.webp');"><div class="md1">4% chance to stun on attack or ability (+4% stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Swiftstride_Shoes.webp');"><div class="md1">+10% movement speed (+10% stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Treasurestrike.webp');"><div class="md1">3% chance to spawn gold on primary attack (+3% stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Vital_Touch.webp');"><div class="md1">+5% crit chance +8 health on crit (+4 stack)</div></div>
+        <div class="m5" style="background-image: url('images/uncommon/Wolff\'s_Law.webp');"><div class="md1">taking physical damage give +10 armor 140 max (+1, +140 stack)</div></div>
         <!--Rare-->
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
-        <div class="m5" style="background-image: url('images/rare/placeholder.webp');"><div class="md1">placholder</div></div>
+        <div class="m5" style="background-image: url('images/rare/Blitzed_Bone.webp');"><div class="md1">+0.2% attack speed on kill 20% max (+0.2%, +20% stack)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Clap_Back\'s_Surprise.webp');"><div class="md1">30% chance to deal 400% attack power as physical damage back to enemies that hit you (+400% stack)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Cloak_and_Dagger.webp');"><div class="md1">deal 150% attack power as physical damage to nearby enemies every 2 seconds (+150% stack)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Dangerous_Implement.webp');"><div class="md1">attack have 4% chance to explode dealing 300% attack power as physical damage to nearby enemies (+4% stack)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Dat_Good_Meat.webp');"><div class="md1">+0.65 health regen (+0.65 stack)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Dotter\'s_Dangler.webp');"><div class="md1">+30% status effect damage (+30% stack)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Gatago_Faust\'s_Band.webp');"><div class="md1">5% chance to drop speed orb on kill that gives +30% sprint speed for 5 seconds to nearby players on pickup (+5% stack)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Hater\'s_Mask.webp');"><div class="md1">abilities give +10% crit damage for 5 sec 5 buffs max (+10% stack)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Icicle_of_Icy_Yum.webp');"><div class="md1">12% chance on primary attack to bounce frost orb 2 times that does 50% attack power as magic dmg and slows 25% for 5 sec (+2 bounce, +50% stack)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Idol_of_Ew.webp');"><div class="md1">deal 300% attack power back to enemies that hit you and slow them for 5 seconds (+100% stack)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Jin\'s_Yanger.webp');"><div class="md1">dealing magic or physical damage give +10% damage to other type for 5 seconds 5 buffs max pre type (+10% stack)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Leechlord_Shroud.webp');"><div class="md1">you and nearby enemies get +1 health on attack (+1 stack)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Stacked_Skull.webp');"><div class="md1">+0.2% damage on kill 20% max (+0.2%, +20% max)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Stew_of_STRONK.webp');"><div class="md1">+75 max health (+75 stack)</div></div>
+        <div class="m5" style="background-image: url('images/rare/Two_Different_Sized_Shoes.webp');"><div class="md1">+10% movement speed +10% sprint speed (+10%, +10% stack)</div></div>
         <!--Epic-->
         <div class="m5" style="background-image: url('images/epic/Beads_of_Bless_Up.webp');"><div class="md1">+50% all healing recieved (+50% stack)</div></div>
         <div class="m5" style="background-image: url('images/epic/Blackjack\'s_Sap.webp');"><div class="md1">+100% damage to enemies over 80% hp (+100% stack)</div></div>
@@ -396,7 +447,7 @@
         <div class="m5" style="background-image: url('images/legendary/Astonishingly_Clever_Optical_Gadget.webp');"><div class="md1">+76.2 crit damage (+76.2 stack)</div></div>
         <div class="m5" style="background-image: url('images/legendary/Boomer\'s_Blessing.webp');"><div class="md1">primary attack deal 100% attack damage to nearby enemies (+100% stack)</div></div>
         <div class="m5" style="background-image: url('images/legendary/Franklin\'s_Rod.webp');"><div class="md1">primary attack hit with a bolt of lightning dealing 300% attack power to 10 enemies with 10 sec cooldown (+300%, +2 enemies stack)</div></div>
-        <div class="m5" style="background-image: url('images/legendary/Math_Approved_Time_Warper.webp');"><div class="md1">+11% attack speed +11% movement speed +11% sprint speed +150 cooldown reduction +1 dodge charge (same buffs on stack)</div></div>
+        <div class="m5" style="background-image: url('images/legendary/Math_Approved_Time_Warper.webp');"><div class="md1">+11% attack speed +11% movement speed +11% sprint speed +150 cooldown reduction +1 dodge charge (+11%, +11%, +11%, +150, +1 stack)</div></div>
         <div class="m5" style="background-image: url('images/legendary/Meat_Fortress.webp');"><div class="md1">+150hp +3 health regen (+150hp +3 health regen stack)</div></div>
         <div class="m5" style="background-image: url('images/legendary/Shroom_of_Second_Chance.webp');"><div class="md1">You revive on death and lose the shroom (+1 revive stack)</div></div>
     </div>
