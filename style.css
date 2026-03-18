@@ -248,8 +248,13 @@ h1{
     padding-bottom: 2.67vh;
 }
 
-#lortb .m4 p{
-    font-size: 3vh;
+#lortb .m4, #about .m4, #helps .m4{
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+#lortb .m4 p, #about .m4 p, #helps .m4 p{
+    font-size: 1.5vw;
     display: inline;
 }
 
@@ -365,6 +370,13 @@ section{
 
 .common, .uncommon, .rare, .epic, .legendary{
     font-size: 3vh;
+}
+
+#help2{
+    margin-bottom: 1.59vh;
+    position: absolute;
+    bottom: 0;
+    margin-left: 6.5vw;
 }
 
 .m1:hover .md, .m5:hover .md1 {display: block;}

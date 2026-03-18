@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="icon" href="stewart2.png" type="image/x-icon" >
+<link rel="icon" href="images/stewart3.png" type="image/x-icon" >
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
 </head>
@@ -10,26 +10,31 @@
 <!--Section Buttons-->
 <div class="div1">
     <a onclick="showSpecific('lort', 'lort2')">
-    <div class="m1" style="background-image: url('cliff.png'); background-size: 150%;"><div class="md">About Lort</div></div><div class="m1i" id="lort2"></div>
+    <div class="m1" style="background-image: url('images/cliff.png'); background-size: 150%;"><div class="md">About Lort</div></div><div class="m1i" id="lort2"></div>
     </a>
     <a onclick="showSpecific('item', 'item2')">
-    <div class="m1" style="background-image: url('images/common/Baba\'s_Bumper.webp'); background-size: 100%;"><div class="md">Items</div></div><div class="m1i" id="item2"></div>
+    <div class="m1" style="background-image: url('images/common/Baba\'s_Bumper.webp'); background-size: cover;"><div class="md">Items</div></div><div class="m1i" id="item2"></div>
     </a>
     <a onclick="showSpecific('atri', 'atri2')">
-    <div class="m1" style="background-image: url('Attributes2.png'); background-size: 105%;"><div class="md">Attributes</div></div><div class="m1i" id="atri2"></div>
+    <div class="m1" style="background-image: url('images/Attributes2.png'); background-size: cover;"><div class="md">Attributes</div></div><div class="m1i" id="atri2"></div>
     </a>
     <a onclick="showSpecific('enem', 'enem2')">
-    <div class="m1" style="background-image: url('images/placeholder.webp'); background-size: 105%;"><div class="md">Enemies</div></div><div class="m1i" id="enem2"></div>
+    <div class="m1" style="background-image: url('images/placeholder.webp'); background-size: cover;"><div class="md">Enemies</div></div><div class="m1i" id="enem2"></div>
+    </a>
+    
+
+    <a onclick="showSpecific('help', 'help2')" style=" position: absolute; bottom: 0; left: 0; margin-bottom: 0.8vh;">
+    <div class="m1" style="background-image: url('images/help.svg'); background-size: 90%;"><div class="md">Help/About Site</div></div><div class="m1i" id="help2"></div>
     </a>
 </div>
 
 <!--Lort Buttons-->
 <div class="div2" id="lort">
     <a onclick="showSpecific2('lortb', 'lortb2')">
-    <div class="mh" style="background-image: url('cliff\ face.jpg'); background-size: 50%;"><p>About LORT</p></div><div class="m2i" id="lortb2" style="margin-top: 4.87vh;"></div>
+    <div class="mh" style="background-image: url('images/cliff\ face.jpg'); background-size: 50%;"><p>About LORT</p></div><div class="m2i" id="lortb2" style="margin-top: 4.87vh;"></div>
     </a>
     <a onclick="showSpecific2('upleak', 'upleak2')">
-    <div class="m2"><img src="stewart2.png" class="m2mage"><p>Updates and Leaks</p></div><div class="m2i" id="upleak2"></div>
+    <div class="m2"><img src="images/stewart2.png" class="m2mage"><p>Updates and Leaks</p></div><div class="m2i" id="upleak2"></div>
     </a>
 </div>
 
@@ -313,6 +318,20 @@
 <div class="div2" id="atri">
 </div>
 
+<!--Enemy Buttons-->
+<div class="div2" id="atri">
+</div>
+
+<!--Help Buttons-->
+<div class="div2" id="help">
+    <a onclick="showSpecific2('about', 'about2')">
+    <div class="m2"><img src="images/about.svg" class="m2mage"><p>About Site</p></div><div class="m2i" id="about2"></div>
+    </a>
+    <a onclick="showSpecific2('helps', 'helps2')">
+    <div class="m2"><img src="images/bug.svg" class="m2mage"><p>Help/Bug report</p></div><div class="m2i" id="helps2"></div>
+    </a>
+</div>
+
 <!--Pages-->
 <section>
 
@@ -336,20 +355,20 @@
     <h1>Updates and Leaks</h1>
     <h2>Update v0.7.1</h2>
     <div class="update">
-        <img src="/images/updates/0.7.1/full.png">
+        <img src="images/updates/0.7.1/full.png">
     </div>
     <h2>Update v0.7</h2>
     <div class="update">
-        <img src="/images/updates/0.7/diff.png">
-        <img src="/images/updates/0.7/magma.png">
-        <img src="/images/updates/0.7/chappel.png">
-        <img src="/images/updates/0.7/highlights.png">
-        <img src="/images/updates/0.7/powerups.png">>
-        <img src="/images/updates/0.7/enemies.png">
-        <img src="/images/updates/0.7/maps.png">
-        <img src="/images/updates/0.7/audio.png">
-        <img src="/images/updates/0.7/quality.png">
-        <img src="/images/updates/0.7/fix.png">
+        <img src="images/updates/0.7/diff.png">
+        <img src="images/updates/0.7/magma.png">
+        <img src="images/updates/0.7/chappel.png">
+        <img src="images/updates/0.7/highlights.png">
+        <img src="images/updates/0.7/powerups.png">>
+        <img src="images/updates/0.7/enemies.png">
+        <img src="images/updates/0.7/maps.png">
+        <img src="images/updates/0.7/audio.png">
+        <img src="images/updates/0.7/quality.png">
+        <img src="images/updates/0.7/fix.png">
     </div>
 </div>
 
@@ -1081,6 +1100,26 @@
     <img src="images/epic/placeholder.webp"><br>
     <div class="m3"><h2>Buffs</h2><p> gives a buff of  ()</p></div>
     <div class="m3"><h2>Stack Buffs</h2><p> gives a stack of </p></div>
+</div>
+
+<!--About Pages-->
+<div class="div3" id="about">
+    <h1>About Site</h1>
+    <div class="m4">
+        <p>This site was developed solely by me (BombR), I did collect data for items from the </p>
+        <a href="https://lort.fandom.com/wiki/Items"><p style="color: blue; text-decoration: underline; cursor: pointer;">Lort Wiki Fandom</p></a>
+        <br><p> All the website source code is public at </p>
+        <a href="https://github.com/Bombrrr/Lort-Site"><p style="color: blue; text-decoration: underline; cursor: pointer;">My GitHub Page</p></a>
+        <br><p> This is a passion project because i genuinely like the Lort game</p>
+    </div>
+</div>
+<div class="div3" id="helps">
+    <h1>Help/Bug Report</h1>
+    <div class="m4">
+        <p>If you encounter a problem with the site try reloading the page, if that fails contact me at bombrrss@gmail.com </p>
+        <br>
+        <p>If it is due to something that includes the placeholder image or placeholder text, that means it is a work in progress and not bug</p>
+    </div>
 </div>
 </section>
 
