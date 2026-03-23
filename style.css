@@ -154,6 +154,8 @@ h1{
 }
 
 .m2mage{
+    flex-shrink: 0;
+    overflow: hidden;
     border-top-style: solid;
     border-top-color: var(--bordercolor);
     border-top-width: 0.3vh;
@@ -164,7 +166,7 @@ h1{
     border-right-color: var(--bordercolor);
     border-right-width: 0.3vh;
     transition: 0.1s;
-    width: 5vw;
+    height: 8.77vh;
     border-top-right-radius: 2.1vw;
     border-bottom-right-radius: 2.1vw;
 }
@@ -187,11 +189,7 @@ h1{
     margin-left: 0.5vw;
 }
 
-.m2c img, .m2u img, .m2r img, .m2e img, .m2l img, .m2 img{
-    float: left;
-}
-
-.m1,.m2c,.m2u,.m3,.m4,.m5,.md1,.mh,.m2, .update{
+.m1,.m2c,.m2u,.m3,.m4,.m4ch,.m5,.md1,.mh,.m2,.update{
     box-sizing: border-box;
     border-style: solid;
     border-color: var(--bordercolor);
@@ -228,7 +226,7 @@ h1{
 }
 
 
-.m4{
+.m4, .m4ch{
     display: flex;
     margin-top: 10.5vh;
     border-radius: 1.5vh;
@@ -253,7 +251,19 @@ h1{
     padding-right: 1vw;
 }
 
-#lortb .m4 p, #about .m4 p, #helps .m4 p{
+.m4ch{
+    margin-top: 1vh;
+    height: 40vh;
+    line-height: 1.5;
+}
+
+.m4 a p, .m4ch a p{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#lortb .m4 p, #about .m4 p, #helps .m4 p, .m4ch p{
     font-size: 1.5vw;
     display: inline;
 }
@@ -339,7 +349,12 @@ section{
     scrollbar-width: none;
 }
 
+#upleak a{
+    font-size: 1.5vw;
+}
+
 #upleak h2{
+    scroll-margin: 2vw;
     margin-top: 6vh;
 }
 

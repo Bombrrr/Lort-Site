@@ -16,10 +16,10 @@
     <div class="m1" style="background-image: url('images/common/Baba\'s_Bumper.webp'); background-size: cover;"><div class="md">Items</div></div><div class="m1i" id="item2"></div>
     </a>
     <a onclick="showSpecific('atri', 'atri2')">
-    <div class="m1" style="background-image: url('images/Attributes2.png'); background-size: cover;"><div class="md">Attributes</div></div><div class="m1i" id="atri2"></div>
+    <div class="m1" style="background-image: url('images/Attributes2.png'); background-size: cover;"><div class="md">Attributes/Trials</div></div><div class="m1i" id="atri2"></div>
     </a>
-    <a onclick="showSpecific('enem', 'enem2')">
-    <div class="m1" style="background-image: url('images/placeholder.webp'); background-size: cover;"><div class="md">Enemies</div></div><div class="m1i" id="enem2"></div>
+    <a onclick="showSpecific('chests', 'chests2')">
+    <div class="m1" style="background-image: url('images/placeholder.webp'); background-size: cover;"><div class="md">Chests/Merchants</div></div><div class="m1i" id="chests2"></div>
     </a>
     
 
@@ -34,7 +34,7 @@
     <div class="mh" style="background-image: url('images/cliff\ face.jpg'); background-size: 50%;"><p>About LORT</p></div><div class="m2i" id="lortb2" style="margin-top: 4.87vh;"></div>
     </a>
     <a onclick="showSpecific2('upleak', 'upleak2')">
-    <div class="m2"><img src="images/stewart2.png" class="m2mage"><p>Updates and Leaks</p></div><div class="m2i" id="upleak2"></div>
+    <div class="m2"><img src="images/stewart2.png" class="m2mage"><p>Updates</p></div><div class="m2i" id="upleak2"></div>
     </a>
 </div>
 
@@ -316,10 +316,49 @@
 
 <!--Attribute Buttons-->
 <div class="div2" id="atri">
+    <a onclick="showSpecific2('red', 'red2')">
+    <div class="m2"><img src="images/strength.webp" class="m2mage"><p>Strength</p></div><div class="m2i" id="red2"></div>
+    </a>
+    <a onclick="showSpecific2('green', 'green2')">
+    <div class="m2"><img src="images/agility.webp" class="m2mage"><p>Agility</p></div><div class="m2i" id="green2"></div>
+    </a>
+    <a onclick="showSpecific2('blue', 'blue2')">
+    <div class="m2"><img src="images/intelligence.webp" class="m2mage"><p>Agility</p></div><div class="m2i" id="blue2"></div>
+    </a>
+    <a onclick="showSpecific2('white', 'white2')">
+    <div class="m2"><img src="images/placeholder.webp" class="m2mage"><p>Item Crystals</p></div><div class="m2i" id="white2"></div>
+    </a>
+    <a onclick="showSpecific2('trial', 'trial2')">
+    <div class="m2"><img src="images/placeholder.webp" class="m2mage"><p>Trials</p></div><div class="m2i" id="trial2"></div>
+    </a>
 </div>
 
-<!--Enemy Buttons-->
-<div class="div2" id="atri">
+<!--Chests Buttons-->
+<div class="div2" id="chests">
+    <a onclick="showSpecific2('chest', 'chest2')">
+    <div class="m2"><img src="images/placeholder.webp" class="m2mage"><p>Chest</p></div><div class="m2i" id="chest2"></div>
+    </a>
+    <a onclick="showSpecific2('bchest', 'bchest2')">
+    <div class="m2"><img src="images/placeholder.webp" class="m2mage"><p>big Chest</p></div><div class="m2i" id="bchest2"></div>
+    </a>
+    <a onclick="showSpecific2('hchest', 'hchest2')">
+    <div class="m2"><img src="images/placeholder.webp" class="m2mage"><p>Heal Chest</p></div><div class="m2i" id="hchest2"></div>
+    </a>
+    <a onclick="showSpecific2('fchest', 'fchest2')">
+    <div class="m2"><img src="images/placeholder.webp" class="m2mage"><p>Free Chest</p></div><div class="m2i" id="fchest2"></div>
+    </a>
+    <a onclick="showSpecific2('ochest', 'ochest2')">
+    <div class="m2"><img src="images/placeholder.webp" class="m2mage"><p>Obsidian Chest</p></div><div class="m2i" id="ochest2"></div>
+    </a>
+    <a onclick="showSpecific2('wchest', 'wchest2')">
+    <div class="m2"><img src="images/placeholder.webp" class="m2mage"><p>Free Weapon Chest</p></div><div class="m2i" id="wchest2"></div>
+    </a>
+    <a onclick="showSpecific2('throne', 'throne2')">
+    <div class="m2"><img src="images/placeholder.webp" class="m2mage"><p>Thrones</p></div><div class="m2i" id="throne2"></div>
+    </a>
+    <a onclick="showSpecific2('merch', 'merch2')">
+    <div class="m2"><img src="images/placeholder.webp" class="m2mage"><p>Merchants</p></div><div class="m2i" id="merch2"></div>
+    </a>
 </div>
 
 <!--Help Buttons-->
@@ -340,24 +379,29 @@
     <h1>About Lort</h1>
     <div class="m4">
         <p>Lort is a Rogue-like game with a silly/funny style with up to 8 player multiplayer, In Lort there are different characters and ways to play, for example you can play as a Wizard with great Area of Effect abilities, another example is an assin with good mobility, there are also many types of weapons that you can find and they are all compatible with every character. The game gets harder as you move from world to world, but if you play correctly you can scale yourself really quickly, you can collect </p>
-        <a onclick="showSpecific('atri', 'atri2')"><p style="color: blue; text-decoration: underline; cursor: pointer;">attributes</p></a>
+        <a onclick="showSpecific('atri', 'atri2')"><p>attributes</p></a>
         <p> that give buffs toward thier type (intelligence, strength, agility) along with </p>
-        <a onclick="showSpecific('item', 'item2')"><p style="color: blue; text-decoration: underline; cursor: pointer;">items</p></a>
+        <a onclick="showSpecific('item', 'item2')"><p>items</p></a>
         <p> that give you different buffs per item, there are also permanant upgrades that stay effect every run that give simple upgrades like health and starting gold. This combination of characters, item upgrades, weapon types, attributes, has 8 player multiplayer, and silly style, keeps runs fresh and fun, Lort also goes on sale often with most events</p>
         <br><br>
         <p>This is why lort is a really good choice if you are planning on buying a roguelike, its refreshing, goes on sale often, and is really fun</p>
         <br><br><br><br>
         <p>Lort Was Designed and developed by Distract-A-Shark and has an official </p>
-        <a href="https://discord.gg/3VhnWFbA"><p style="color: blue; text-decoration: underline; cursor: pointer;">Discord</p></a>
+        <a href="https://discord.gg/3VhnWFbA"><p>Discord</p></a>
     </div>
 </div>
 <div class="div3" id="upleak">
-    <h1>Updates and Leaks</h1>
-    <h2>Update v0.7.1</h2>
+    <h1>Updates</h1>
+    <h2>Easy Updates</h2>
+    <div class="update">
+        <a href="#0.7.1">V0.7.1</a>
+        <a href="#0.7">V0.7</a>
+    </div>
+    <h2 id="0.7.1">Update v0.7.1</h2>
     <div class="update">
         <img src="images/updates/0.7.1/full.png">
     </div>
-    <h2>Update v0.7</h2>
+    <h2 id="0.7">Update v0.7</h2>
     <div class="update">
         <img src="images/updates/0.7/diff.png">
         <img src="images/updates/0.7/magma.png">
@@ -1093,13 +1137,129 @@
     <div class="m3"><h2>Stack Buffs</h2><p> gives a stack of </p></div>
 </div>
 
-<!--Attributes Pages-->
-<div class="div3" id="placeholder">
-    <h1>Placeholder</h1>
-    <h2 class="epic">Epic</h2>
-    <img src="images/epic/placeholder.webp"><br>
-    <div class="m3"><h2>Buffs</h2><p> gives a buff of  ()</p></div>
-    <div class="m3"><h2>Stack Buffs</h2><p> gives a stack of </p></div>
+<!--Attribute Pages-->
+<div class="div3" id="red">
+    <h1>Strength Attribute</h1>
+    <img src="images/strength.webp"><br>
+    <div class="m4" style="height: 40vh; margin-top: 1vh; font-size: 3vw;">
+        The Strength attribute grants:
+        <br>+Crit damage
+        <br>+damage with the strength weapons
+        <br>along with +attack power and +health 
+    </div>
+</div>
+<div class="div3" id="green">
+    <h1>Agility Attribute</h1>
+    <img src="images/agility.webp"><br>
+    <div class="m4" style="height: 40vh; margin-top: 1vh; font-size: 3vw;">
+        The Agility attribute grants:
+        <br>+Attack speed
+        <br>+damage with the agility weapons
+        <br>along with +attack power and +health 
+    </div>
+</div>
+<div class="div3" id="blue">
+    <h1>Intelligence Attribute</h1>
+    <img src="images/intelligence.webp"><br>
+    <div class="m4" style="height: 40vh; margin-top: 1vh; font-size: 3vw;">
+        The Intelligence attribute grants:
+        <br>+Cooldown reduction
+        <br>+Damage with the intelligence weapons
+        <br>along with +Attack power and +Health 
+    </div>
+</div>
+<div class="div3" id="white">
+    <h1>Item crystal</h1>
+    <img src="images/placeholder.webp"><br>
+    <div class="m4" style="height: 40vh; margin-top: 1vh; font-size: 2vw;">
+        The Item Crystal has multiple forms, theres 2 types of the white form, most give an option between 2 items, and the ones in camps gives just 1 (there are also many variables based on where you get it and what you get from it), along with that there are the red, green, and blue ones you get from thrones, <a onclick="showSpecific('chests', 'chests2'); showSpecific2('throne', 'throne2')"><p>info for them here</p></a>
+    </div>
+</div>
+<div class="div3" id="trial">
+    <h1>Trials</h1>
+    <img src="images/placeholder.webp"><br>
+    <div class="m4" style="height: 40vh; margin-top: 1vh; font-size: 2vw;">
+        Trials have 3 types, Novice, Veteran, and Champion, when the trials are started they spawn enemies, (more spawn based on what trial is summoned, the more skulls the harder), once all enemies summoned have been killed you get a gold coin with value ranging from 2 values shown when you interact with it, They also give more money the lower the player count.
+    </div>
+</div>
+
+<!--Chests Pages-->
+<div class="div3" id="chest">
+    <h1>Normal Chests</h1>
+    <img src="images/placeholder.webp"><br>
+    <div class="m4ch">
+        <p>Normal chests are the cheapest type of chest, the chests give low rarity drops, they have a high chance of common, medium chance of uncommon, and a low chance of rare items</p>
+    </div>
+</div>
+<div class="div3" id="bchest">
+    <h1>Big Chests</h1>
+    <img src="images/placeholder.webp"><br>
+    <div class="m4ch">
+        <p>Big chests are the most expensive type of chest, they give mid-high rarity drops, they have a high chance of uncommon, mid chanc of common and rare, and a low chance of epic items</p>
+    </div>
+</div>
+<div class="div3" id="hchest">
+    <h1>Heal Chests</h1>
+    <img src="images/placeholder.webp"><br>
+    <div class="m4ch">
+        <p>Heal chests are slightly more expensive than normal chests, they drop heal based items, like</p>
+        <a onclick="showSpecific2('shroud', 'shroud2')"><p>Leechlord Shroud</p></a>
+        <p>or</p>
+        <a onclick="showSpecific2('vtouch', 'vtouch2')"><p>Vital Touch</p></a>
+    </div>
+</div>
+<div class="div3" id="fchest">
+    <h1>Free Chests</h1>
+    <img src="images/placeholder.webp"><br>
+    <div class="m4ch">
+        <p>The free chest is the same as a normal chest but its free (unlock from rune juice guy)</p>
+    </div>
+</div>
+<div class="div3" id="ochest">
+    <h1>Obsidian Chests</h1>
+    <img src="images/placeholder.webp"><br>
+    <div class="m4ch">
+        <p>Obsidian chests drop weapons but require an obsidian key to open (the key is found by chance enemy drops or in meat rooms at goblin camps)</p>
+    </div>
+</div>
+<div class="div3" id="wchest">
+    <h1>Free Weapon Chests</h1>
+    <img src="images/placeholder.webp"><br>
+    <div class="m4ch">
+        <p>Free Weapon Chests are basically just a free obsidian chest</p>
+    </div>
+</div>
+<div class="div3" id="throne">
+    <h1>Thrones</h1>
+    <img src="images/placeholder.webp"><br>
+    <div class="m4ch">
+        <p>The Thrones drop Item crystals that give everyone an item, they give an option of 3 out of many items based on what color they are</p>
+        <br>
+        <p>Red thrones give items that are mainly based on brawler classes<br> (</p>
+        <a onclick="showSpecific2('skull', 'skull2')"><p>Stacked skulls</p></a>
+        <a onclick="showSpecific2('swole', 'swole2')"><p>Trophy of Swole</p></a>
+        <a onclick="showSpecific2('blitz', 'blitz2')"><p>Blitz Bone</p></a>
+        <p>and other things focused on damage, health and)</p>
+        <br>
+        <p>Green thrones give items that are mainly based on speed<br> (</p>
+        <a onclick="showSpecific2('blitz', 'blitz2')"><p>Blitz Bone</p></a>
+        <a onclick="showSpecific2('spro', 'spro2')"><p>Cup'o Spro</p></a>
+        <a onclick="showSpecific2('shoe', 'shoe2')"><p>2 Different sized shoes</p></a>
+        <p>and other things focused on speed)</p>
+        <br>
+        <p>Blue thrones give items that are mainly based on staying alive<br> (</p>
+        <a onclick="showSpecific2('shroom', 'shroom2')"><p>Shroom of second chances</p></a>
+        <a onclick="showSpecific2('fence', 'fence')"><p>Fencers Fancy</p></a>
+        <a onclick="showSpecific2('thic', 'thic')"><p>Thicc Skin</p></a>
+        <p>and other things focused on staying alive)</p>
+    </div>
+</div>
+<div class="div3" id="merch">
+    <h1>Merchants</h1>
+    <img src="images/placeholder.webp"><br>
+    <div class="m4ch">
+        <p>Merchants sell random items, the reason to buy from them is because it allows you to see what item you are buying, they sell items at different rarities, the chance of selling an item at each rarity is rarer the higher the rarity, the higher the rarity, they also have a limited amount of items ranging from 2 to 14</p>
+    </div>
 </div>
 
 <!--About Pages-->
